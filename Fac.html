@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Факториал числа</title>
+</head>
+<body>
+    <h1>Вычисление факториала</h1>
+    <script>
+        function factorial(n) {
+            let result = 1;
+            for(let i = 1; i <= n; i++) {
+                result *= i;
+            }
+            return result;
+        }
+
+        var number = 7;
+        var fact = factorial(number);
+        document.write(`Факториал числа ${number} = ${fact}`);
+    </script>
+</body>
+</html>
